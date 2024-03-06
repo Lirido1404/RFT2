@@ -1,0 +1,70 @@
+.animvoit1 {
+    animation: dep 1s ease-out forwards, opacity 1s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes dep {
+    0% {
+      transform: translate(
+        150px,
+        -150px
+      ); /* Déplacement initial en haut à gauche */
+    }
+    100% {
+      transform: translate(0, 0); /* Déplacement final à la position d'origine */
+    }
+  }
+  
+  @keyframes dep2 {
+    0% {
+      transform: translate(
+        -150px,
+        -150px
+      ); /* Déplacement initial en haut à gauche */
+    }
+    100% {
+      transform: translate(0, 0); /* Déplacement final à la position d'origine */
+    }
+  }
+  
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .bmwlogo:hover {
+    transform: scaleX(-1);
+  }
+  
+  .bmwlogo {
+    transition: ease-in-out 0.2s;
+  }
+  
+  .aret {
+    transform: scaleX(-1);
+  }
+  
+  @keyframes dep2 {
+    0% {
+      transform: translateX(-150px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .animvoit2 {
+    animation: dep2 1s ease-out forwards, opacity 1s ease-out forwards;
+    opacity: 0;
+  }
+  
+  * {
+    scroll-behavior: smooth;
+  }
+  
+  
+  

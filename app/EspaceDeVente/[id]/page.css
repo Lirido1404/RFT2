@@ -1,0 +1,78 @@
+.pcar {
+    position: relative;
+    display: inline-block;
+    animation: opacity 0.6s ease-in-out forwards;
+  }
+  
+  .pcar::after {
+    content: "";
+    position: absolute;
+    background-color: #ff7e14;
+    height: 6px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+  
+    border-radius: 10px;
+    animation: wid 0.6s ease-in-out forwards;
+  }
+  
+  @keyframes wid {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes opacity {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .logo {
+    animation: rotation 1s ease-in-out forwards 1s;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden; /* Pour s'assurer que les coins restent arrondis */
+  }
+  
+  th,
+  td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  th {
+    background-color: #ff7e14;
+    opacity: 70%;
+    color: white;
+  }
+  
+  td {
+    background-color: white;
+  }
+  
